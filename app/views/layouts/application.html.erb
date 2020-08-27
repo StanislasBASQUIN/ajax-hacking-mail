@@ -1,0 +1,13 @@
+<% content_for :navbar do %>
+  <%= render partial: "shared/navbar" %>
+<% end %>
+
+<% content_for :main do %>
+  <%= content_for?(:application) ? yield(:application) : yield %>
+<% end %>
+
+<% content_for :footer do %>
+  <%= render partial: "shared/footer" %>
+<% end %>
+
+<%= render template: "layouts/main" %>

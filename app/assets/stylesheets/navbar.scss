@@ -1,0 +1,9 @@
+@import 'bootstrap';
+
+nav {
+  @extend .navbar, .navbar-expand-lg, .navbar-dark, .bg-primary;
+}
+
+nav div {
+  @extend .container;
+}

@@ -1,0 +1,14 @@
+@import "bootstrap";
+
+footer {
+  @extend .py-3, .bg-primary;
+}
+
+footer > div {
+  @extend .container;
+}
+
+footer p, footer a {
+  @extend .m-0, .text-center, .text-white;
+}
+

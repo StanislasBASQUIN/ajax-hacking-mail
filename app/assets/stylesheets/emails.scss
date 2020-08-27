@@ -1,0 +1,54 @@
+// Place all the styles related to the emails controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import 'bootstrap';
+
+div.page {
+  @extend .container;
+}
+
+div.page__head, div.page__main {
+  @extend .row;
+}
+
+div.page__side {
+  @extend .col-md-4;
+}
+
+div.page__content {
+  @extend .col-md-8;
+}
+
+ul.email-list {
+  @extend .list-group;
+}
+
+li.email-item {
+  @extend .list-group-item, .list-group-item-action;
+}
+
+button#newFakeEmail {
+  @extend .btn, .btn-info, .m-5;
+}
+
+.email-object {
+  font-size: 1.5em;
+}
+
+
+//Design de l'objet du Email en fonction de l'état lu / non-lu
+.email-item--unread {
+  @extend .text-primary;
+  font-weight: bolder;
+}
+.email-item--read {
+  @extend .text-secondary;
+  font-weight: lighter;
+}
+
+.email-item--unread.email-item--selected {
+  @extend .text-white, .bg-primary;
+}
+.email-item--read.email-item--selected {
+  @extend .text-white, .bg-secondary;
+}

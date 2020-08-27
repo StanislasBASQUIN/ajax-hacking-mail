@@ -1,0 +1,13 @@
+function showEmail() {
+  let div = document.querySelector("div.page__content")
+  if (div.firstChild) {
+    div.firstChild.remove()
+  }
+  div.insertAdjacentHTML("afterbegin", "<%= j render partial: 'email', locals: {email: @email, remote: true} %>")
+  let selected = document.querySelectorAll(".email-item--selected")
+  selected.forEach(item => item.classList.remove("email-item--selected"))
+  let active = document.getElementById("email-item-<%= @email.id %>")
+  active.classList.add("email-item--selected")
+}
+
+showEmail()
