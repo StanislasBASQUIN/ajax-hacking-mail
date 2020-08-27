@@ -22,3 +22,15 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+# Ajax_Gmail
+
+_ Last JavaScript Exercises_
+
+## Auteurs
+
+- [:fire: Halima CHERIK](https://github.com/Halima-C)
+- [:fire: Vicky LUCEA](https://github.com/VickyMayLee)
+- [:fire: Abdeldjallil KADID](https://github.com/AleaToir3)
+- [:fire: Tim SPIRIDINOV](https://github.com/LeDjinn)
+- [:fire: Stanislas BASQUIN](https://github.com/StanislasBASQUIN)
