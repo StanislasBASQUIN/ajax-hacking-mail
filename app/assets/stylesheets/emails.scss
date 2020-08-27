@@ -31,9 +31,27 @@ button#newFakeEmail {
   @extend .btn, .btn-info, .m-5;
 }
 
-.email-object {
+.email-details__object {
   font-size: 1.5em;
 }
+
+
+//Design des boutons suppression et lu/non-lu
+button.email-delete {
+  @extend .btn, .btn-danger;
+}
+button.email-update {
+  @extend .btn;
+}
+button.email-update--read {
+  @extend .btn-info;
+}
+button.email-update--unread {
+  @extend .btn-success;
+}
+
+
+
 
 
 //Design de l'objet du Email en fonction de l'état lu / non-lu

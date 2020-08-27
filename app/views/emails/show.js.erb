@@ -8,6 +8,12 @@ function showEmail() {
   selected.forEach(item => item.classList.remove("email-item--selected"))
   let active = document.getElementById("email-item-<%= @email.id %>")
   active.classList.add("email-item--selected")
-}
 
+  let li = document.getElementById("email-item-<%= @email.id %>")
+  if (li) {
+    li.classList.remove('email-item--read')
+    li.classList.remove('email-item--unread')
+    li.classList.add("email-item--<%= @email.read_status %>")
+  }
+}
 showEmail()

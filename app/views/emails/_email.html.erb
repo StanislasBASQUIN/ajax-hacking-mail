@@ -1,11 +1,11 @@
 <div class="email-details email-details--<%= email.read_status %>" id="email-details-<%= email.id %>">
-  <div class="email-object">
+  <div class="email-details__object">
     <p> <%= email.object %> </p>
   </div>
-  <div class="email-body">
+  <div class="email-details__body">
     <p> <%= email.body %> </p>
   </div>
-  <div class="email-controls">
+  <div class="email-details__controls">
     <%= link_to email_path(email), {method: :delete, remote: remote} do %>
       <button class="email-delete"> Supprimer </button>
     <% end %>

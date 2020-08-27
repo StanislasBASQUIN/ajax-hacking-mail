@@ -1,0 +1,23 @@
+function updateEmail() {
+  let div = document.getElementById("email-details-<%= @email.id %>")
+  if (div) {
+    div.classList.remove('email-details--read')
+    div.classList.remove('email-details--unread')
+    div.classList.add("email-details--<%= @email.read_status %>")
+  }
+
+  let li = document.getElementById("email-item-<%= @email.id %>")
+  if (li) {
+    li.classList.remove('email-item--read')
+    li.classList.remove('email-item--unread')
+    li.classList.add("email-item--<%= @email.read_status %>")
+  }
+  
+  let button = document.querySelector("button.email-update")
+  button.classList.remove('email-update--read')
+  button.classList.remove('email-update--unread')
+  button.classList.add("email-update--<%= @email.read_status %>")
+  button.textContent = "<%= @email.read ? 'Marquer non lu' : 'Marquer lu'%>"
+}
+
+updateEmail()

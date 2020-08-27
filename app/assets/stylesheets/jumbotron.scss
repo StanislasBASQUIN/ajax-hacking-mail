@@ -1,0 +1,14 @@
+@import "bootstrap";
+
+div.jumbotron {
+  @extend .jumbotron-fluid, .bg-info, .my-3, .py-3;
+}
+
+div.jumbotron > div {
+  @extend .container;
+}
+
+div.jumbotron > div > h1 {
+  @extend .font-weight-bold, .text-white, .text-center;
+  font-size: 2em;
+}
